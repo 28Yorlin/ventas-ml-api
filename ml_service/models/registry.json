@@ -1,0 +1,1149 @@
+{
+  "RL-ventas-001": {
+    "algoritmo": "RL",
+    "version": "RL-ventas-001",
+    "estado": "INACTIVO",
+    "modelo_tipo": "ventas",
+    "dataset": "ventas.csv",
+    "registros": 50523,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "demanda_lag_1",
+      "demanda_lag_7",
+      "demanda_lag_14",
+      "demanda_lag_28",
+      "demanda_media_7",
+      "demanda_media_14",
+      "demanda_max_7"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.44776544685152714,
+    "rmse": 1.0514262947313935,
+    "mape": 21.88,
+    "wmape": 21.88,
+    "r2": 0.008958671062755497,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\models\\RL-ventas-001.joblib",
+    "fecha": "2026-11-02T16:04:38",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-07-31"
+    },
+    "validacion": {
+      "mae": 0.3142665247221342,
+      "rmse": 0.7853544723249904,
+      "mape": 25.4,
+      "r2": 0.0026355406789111413
+    },
+    "prueba": {
+      "mae": 0.44776544685152714,
+      "rmse": 1.0514262947313935,
+      "mape": 21.88,
+      "r2": 0.008958671062755497
+    }
+  },
+  "RL-inventario-001": {
+    "algoritmo": "RL",
+    "version": "RL-inventario-001",
+    "estado": "INACTIVO",
+    "modelo_tipo": "inventario",
+    "dataset": "ventas.csv",
+    "registros": 47572,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "stock_lag_1",
+      "stock_lag_7",
+      "stock_lag_14",
+      "stock_lag_28",
+      "stock_media_7",
+      "stock_media_14",
+      "stock_minimo",
+      "stock_seguridad",
+      "tiempo_reposicion",
+      "rotacion_alta",
+      "rotacion_media",
+      "rotacion_baja",
+      "entrada_lag_1",
+      "salida_lag_1"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.36771194793396184,
+    "rmse": 1.5300137476995648,
+    "mape": 1.15,
+    "wmape": 1.15,
+    "r2": 0.9946948724979465,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\models\\RL-inventario-001.joblib",
+    "fecha": "2026-11-02T16:04:39",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-07-31"
+    },
+    "validacion": {
+      "mae": 0.3433632878457908,
+      "rmse": 2.175081349140595,
+      "mape": 0.33,
+      "r2": 0.9940381197366271
+    },
+    "prueba": {
+      "mae": 0.36771194793396184,
+      "rmse": 1.5300137476995648,
+      "mape": 1.15,
+      "r2": 0.9946948724979465
+    }
+  },
+  "RL-ventas-002": {
+    "algoritmo": "RL",
+    "version": "RL-ventas-002",
+    "estado": "INACTIVO",
+    "modelo_tipo": "ventas",
+    "dataset": "ventas.csv",
+    "registros": 50523,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "demanda_lag_1",
+      "demanda_lag_7",
+      "demanda_lag_14",
+      "demanda_lag_28",
+      "demanda_media_7",
+      "demanda_media_14",
+      "demanda_max_7"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.44776544685152714,
+    "rmse": 1.0514262947313935,
+    "mape": 21.88,
+    "wmape": 185.16342642029454,
+    "r2": 0.008958671062755497,
+    "mae_base": 0.4039394674689784,
+    "rmse_base": 1.0570740000199585,
+    "r2_base": -0.001716621606910218,
+    "demanda_base_media_entrenamiento": 0.19806246759979265,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\models\\RL-ventas-002.joblib",
+    "fecha": "2026-11-02T16:21:39",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-07-31"
+    },
+    "validacion": {
+      "mae": 0.3142665247221342,
+      "rmse": 0.7853544723249904,
+      "mape": 25.4,
+      "wmape": 213.94223278548256,
+      "r2": 0.0026355406789111413,
+      "mae_base": 0.32206905746289805,
+      "rmse_base": 0.7880544353115139,
+      "r2_base": -0.004233907644352941
+    },
+    "prueba": {
+      "mae": 0.44776544685152714,
+      "rmse": 1.0514262947313935,
+      "mape": 21.88,
+      "wmape": 185.16342642029454,
+      "r2": 0.008958671062755497,
+      "mae_base": 0.4039394674689784,
+      "rmse_base": 1.0570740000199585,
+      "r2_base": -0.001716621606910218
+    },
+    "fechas_division": {
+      "entrenamiento_fin": "2026-01-28",
+      "validacion_inicio": "2026-01-29",
+      "validacion_fin": "2026-04-30",
+      "prueba_inicio": "2026-05-01"
+    }
+  },
+  "RL-inventario-002": {
+    "algoritmo": "RL",
+    "version": "RL-inventario-002",
+    "estado": "INACTIVO",
+    "modelo_tipo": "inventario",
+    "dataset": "ventas.csv",
+    "registros": 47572,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "stock_lag_1",
+      "stock_lag_7",
+      "stock_lag_14",
+      "stock_lag_28",
+      "stock_media_7",
+      "stock_media_14",
+      "stock_minimo",
+      "stock_seguridad",
+      "tiempo_reposicion",
+      "rotacion_alta",
+      "rotacion_media",
+      "rotacion_baja",
+      "entrada_lag_1",
+      "salida_lag_1"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.36771194793396184,
+    "rmse": 1.5300137476995648,
+    "mape": 1.15,
+    "wmape": 1.6238691736086182,
+    "r2": 0.9946948724979465,
+    "mae_base": 24.76992669401046,
+    "rmse_base": 27.496935152332224,
+    "r2_base": -0.7134590857304559,
+    "demanda_base_media_entrenamiento": 40.38738585252828,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\models\\RL-inventario-002.joblib",
+    "fecha": "2026-11-02T16:21:40",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-07-31"
+    },
+    "validacion": {
+      "mae": 0.3433632878457908,
+      "rmse": 2.175081349140595,
+      "mape": 0.33,
+      "wmape": 1.13200780289687,
+      "r2": 0.9940381197366271,
+      "mae_base": 24.93554520072873,
+      "rmse_base": 29.91060142829895,
+      "r2_base": -0.12741168597310693
+    },
+    "prueba": {
+      "mae": 0.36771194793396184,
+      "rmse": 1.5300137476995648,
+      "mape": 1.15,
+      "wmape": 1.6238691736086182,
+      "r2": 0.9946948724979465,
+      "mae_base": 24.76992669401046,
+      "rmse_base": 27.496935152332224,
+      "r2_base": -0.7134590857304559
+    },
+    "fechas_division": {
+      "entrenamiento_fin": "2026-01-28",
+      "validacion_inicio": "2026-01-29",
+      "validacion_fin": "2026-04-30",
+      "prueba_inicio": "2026-05-01"
+    }
+  },
+  "RL-ventas-003": {
+    "algoritmo": "RL",
+    "version": "RL-ventas-003",
+    "estado": "INACTIVO",
+    "modelo_tipo": "ventas",
+    "dataset": "ventas.csv",
+    "registros": 50523,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "demanda_lag_1",
+      "demanda_lag_7",
+      "demanda_lag_14",
+      "demanda_lag_28",
+      "demanda_media_7",
+      "demanda_media_14",
+      "demanda_max_7"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.44776544685152714,
+    "rmse": 1.0514262947313935,
+    "mape": 21.88,
+    "wmape": 185.16342642029454,
+    "r2": 0.008958671062755497,
+    "mae_base": 0.4039394674689784,
+    "rmse_base": 1.0570740000199585,
+    "r2_base": -0.001716621606910218,
+    "demanda_base_media_entrenamiento": 0.19806246759979265,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\models\\RL-ventas-003.joblib",
+    "fecha": "2026-11-02T16:24:47",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-07-31"
+    },
+    "validacion": {
+      "mae": 0.3142665247221342,
+      "rmse": 0.7853544723249904,
+      "mape": 25.4,
+      "wmape": 213.94223278548256,
+      "r2": 0.0026355406789111413,
+      "mae_base": 0.32206905746289805,
+      "rmse_base": 0.7880544353115139,
+      "r2_base": -0.004233907644352941
+    },
+    "prueba": {
+      "mae": 0.44776544685152714,
+      "rmse": 1.0514262947313935,
+      "mape": 21.88,
+      "wmape": 185.16342642029454,
+      "r2": 0.008958671062755497,
+      "mae_base": 0.4039394674689784,
+      "rmse_base": 1.0570740000199585,
+      "r2_base": -0.001716621606910218
+    },
+    "fechas_division": {
+      "entrenamiento_fin": "2026-01-28",
+      "validacion_inicio": "2026-01-29",
+      "validacion_fin": "2026-04-30",
+      "prueba_inicio": "2026-05-01"
+    }
+  },
+  "RL-inventario-003": {
+    "algoritmo": "RL",
+    "version": "RL-inventario-003",
+    "estado": "INACTIVO",
+    "modelo_tipo": "inventario",
+    "dataset": "ventas.csv",
+    "registros": 47572,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "stock_lag_1",
+      "stock_lag_7",
+      "stock_lag_14",
+      "stock_lag_28",
+      "stock_media_7",
+      "stock_media_14",
+      "stock_minimo",
+      "stock_seguridad",
+      "tiempo_reposicion",
+      "rotacion_alta",
+      "rotacion_media",
+      "rotacion_baja",
+      "entrada_lag_1",
+      "salida_lag_1"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.36771194793396184,
+    "rmse": 1.5300137476995648,
+    "mape": 1.15,
+    "wmape": 1.6238691736086182,
+    "r2": 0.9946948724979465,
+    "mae_base": 24.76992669401046,
+    "rmse_base": 27.496935152332224,
+    "r2_base": -0.7134590857304559,
+    "demanda_base_media_entrenamiento": 40.38738585252828,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\models\\RL-inventario-003.joblib",
+    "fecha": "2026-11-02T16:24:49",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-07-31"
+    },
+    "validacion": {
+      "mae": 0.3433632878457908,
+      "rmse": 2.175081349140595,
+      "mape": 0.33,
+      "wmape": 1.13200780289687,
+      "r2": 0.9940381197366271,
+      "mae_base": 24.93554520072873,
+      "rmse_base": 29.91060142829895,
+      "r2_base": -0.12741168597310693
+    },
+    "prueba": {
+      "mae": 0.36771194793396184,
+      "rmse": 1.5300137476995648,
+      "mape": 1.15,
+      "wmape": 1.6238691736086182,
+      "r2": 0.9946948724979465,
+      "mae_base": 24.76992669401046,
+      "rmse_base": 27.496935152332224,
+      "r2_base": -0.7134590857304559
+    },
+    "fechas_division": {
+      "entrenamiento_fin": "2026-01-28",
+      "validacion_inicio": "2026-01-29",
+      "validacion_fin": "2026-04-30",
+      "prueba_inicio": "2026-05-01"
+    }
+  },
+  "RL-ventas-004": {
+    "algoritmo": "RL",
+    "version": "RL-ventas-004",
+    "estado": "INACTIVO",
+    "modelo_tipo": "ventas",
+    "dataset": "ventas.csv",
+    "registros": 50523,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "festivo",
+      "fin_semana",
+      "demanda_lag_1",
+      "demanda_lag_7",
+      "demanda_lag_14",
+      "demanda_lag_28",
+      "demanda_media_7",
+      "demanda_media_14",
+      "demanda_max_7"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.4475960571454277,
+    "rmse": 1.0514126920242866,
+    "mape": 21.98,
+    "wmape": 21.98,
+    "r2": 0.008984313863953708,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\models\\RL-ventas-004.joblib",
+    "fecha": "2026-11-02T16:49:57",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-07-31"
+    },
+    "validacion": {
+      "mae": 0.3139900573886397,
+      "rmse": 0.7852197376546233,
+      "mape": 24.67,
+      "r2": 0.002977725130344
+    },
+    "prueba": {
+      "mae": 0.4475960571454277,
+      "rmse": 1.0514126920242866,
+      "mape": 21.98,
+      "r2": 0.008984313863953708
+    }
+  },
+  "RL-inventario-004": {
+    "algoritmo": "RL",
+    "version": "RL-inventario-004",
+    "estado": "INACTIVO",
+    "modelo_tipo": "inventario",
+    "dataset": "ventas.csv",
+    "registros": 47572,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "stock_lag_1",
+      "stock_lag_7",
+      "stock_lag_14",
+      "stock_lag_28",
+      "stock_media_7",
+      "stock_media_14",
+      "stock_minimo",
+      "stock_seguridad",
+      "tiempo_reposicion",
+      "rotacion_alta",
+      "rotacion_media",
+      "rotacion_baja",
+      "entrada_lag_1",
+      "salida_lag_1"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.36771194793396184,
+    "rmse": 1.5300137476995648,
+    "mape": 1.15,
+    "wmape": 1.15,
+    "r2": 0.9946948724979465,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\models\\RL-inventario-004.joblib",
+    "fecha": "2026-11-02T16:50:01",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-07-31"
+    },
+    "validacion": {
+      "mae": 0.3433632878457908,
+      "rmse": 2.175081349140595,
+      "mape": 0.33,
+      "r2": 0.9940381197366271
+    },
+    "prueba": {
+      "mae": 0.36771194793396184,
+      "rmse": 1.5300137476995648,
+      "mape": 1.15,
+      "r2": 0.9946948724979465
+    }
+  },
+  "RL-ventas-005": {
+    "algoritmo": "RL",
+    "version": "RL-ventas-005",
+    "estado": "INACTIVO",
+    "modelo_tipo": "ventas",
+    "dataset": "ventas.csv",
+    "registros": 50523,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "festivo",
+      "fin_semana",
+      "promo",
+      "descuento_pct",
+      "demanda_lag_1",
+      "demanda_lag_7",
+      "demanda_lag_14",
+      "demanda_lag_28",
+      "demanda_media_7",
+      "demanda_media_14",
+      "demanda_max_7"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.447596057145427,
+    "rmse": 1.0514126920242863,
+    "mape": 21.98,
+    "wmape": 21.98,
+    "r2": 0.008984313863953819,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\models\\RL-ventas-005.joblib",
+    "fecha": "2026-11-02T16:52:22",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-07-31"
+    },
+    "validacion": {
+      "mae": 0.313990057388639,
+      "rmse": 0.7852197376546232,
+      "mape": 24.67,
+      "r2": 0.002977725130344222
+    },
+    "prueba": {
+      "mae": 0.447596057145427,
+      "rmse": 1.0514126920242863,
+      "mape": 21.98,
+      "r2": 0.008984313863953819
+    }
+  },
+  "RL-inventario-005": {
+    "algoritmo": "RL",
+    "version": "RL-inventario-005",
+    "estado": "INACTIVO",
+    "modelo_tipo": "inventario",
+    "dataset": "ventas.csv",
+    "registros": 47572,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "stock_lag_1",
+      "stock_lag_7",
+      "stock_lag_14",
+      "stock_lag_28",
+      "stock_media_7",
+      "stock_media_14",
+      "stock_minimo",
+      "stock_seguridad",
+      "tiempo_reposicion",
+      "rotacion_alta",
+      "rotacion_media",
+      "rotacion_baja",
+      "entrada_lag_1",
+      "salida_lag_1"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.36771194793396184,
+    "rmse": 1.5300137476995648,
+    "mape": 1.15,
+    "wmape": 1.15,
+    "r2": 0.9946948724979465,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\models\\RL-inventario-005.joblib",
+    "fecha": "2026-11-02T16:52:25",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-07-31"
+    },
+    "validacion": {
+      "mae": 0.3433632878457908,
+      "rmse": 2.175081349140595,
+      "mape": 0.33,
+      "r2": 0.9940381197366271
+    },
+    "prueba": {
+      "mae": 0.36771194793396184,
+      "rmse": 1.5300137476995648,
+      "mape": 1.15,
+      "r2": 0.9946948724979465
+    }
+  },
+  "RL-ventas-006": {
+    "algoritmo": "RL",
+    "version": "RL-ventas-006",
+    "estado": "INACTIVO",
+    "modelo_tipo": "ventas",
+    "dataset": "ventas.csv",
+    "registros": 50523,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "festivo",
+      "fin_semana",
+      "promo",
+      "descuento_pct",
+      "demanda_lag_1",
+      "demanda_lag_7",
+      "demanda_lag_14",
+      "demanda_lag_28",
+      "demanda_media_7",
+      "demanda_media_14",
+      "demanda_max_7"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.447596057145427,
+    "rmse": 1.0514126920242863,
+    "mape": 21.98,
+    "wmape": 21.98,
+    "r2": 0.008984313863953819,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\models\\RL-ventas-006.joblib",
+    "fecha": "2026-11-02T16:54:05",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-07-31"
+    },
+    "validacion": {
+      "mae": 0.313990057388639,
+      "rmse": 0.7852197376546232,
+      "mape": 24.67,
+      "r2": 0.002977725130344222
+    },
+    "prueba": {
+      "mae": 0.447596057145427,
+      "rmse": 1.0514126920242863,
+      "mape": 21.98,
+      "r2": 0.008984313863953819
+    }
+  },
+  "RL-inventario-006": {
+    "algoritmo": "RL",
+    "version": "RL-inventario-006",
+    "estado": "INACTIVO",
+    "modelo_tipo": "inventario",
+    "dataset": "ventas.csv",
+    "registros": 47572,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "stock_lag_1",
+      "stock_lag_7",
+      "stock_lag_14",
+      "stock_lag_28",
+      "stock_media_7",
+      "stock_media_14",
+      "stock_minimo",
+      "stock_seguridad",
+      "tiempo_reposicion",
+      "rotacion_alta",
+      "rotacion_media",
+      "rotacion_baja",
+      "entrada_lag_1",
+      "salida_lag_1"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.36771194793396184,
+    "rmse": 1.5300137476995648,
+    "mape": 1.15,
+    "wmape": 1.15,
+    "r2": 0.9946948724979465,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\models\\RL-inventario-006.joblib",
+    "fecha": "2026-11-02T16:54:08",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-07-31"
+    },
+    "validacion": {
+      "mae": 0.3433632878457908,
+      "rmse": 2.175081349140595,
+      "mape": 0.33,
+      "r2": 0.9940381197366271
+    },
+    "prueba": {
+      "mae": 0.36771194793396184,
+      "rmse": 1.5300137476995648,
+      "mape": 1.15,
+      "r2": 0.9946948724979465
+    }
+  },
+  "RL-ventas-007": {
+    "algoritmo": "RL",
+    "version": "RL-ventas-007",
+    "estado": "INACTIVO",
+    "modelo_tipo": "ventas",
+    "dataset": "ventas.csv",
+    "registros": 3370,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "festivo",
+      "fin_semana",
+      "promo",
+      "descuento_pct",
+      "demanda_lag_1",
+      "demanda_lag_7",
+      "demanda_lag_14",
+      "demanda_lag_28",
+      "demanda_media_7",
+      "demanda_media_14",
+      "demanda_max_7"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 8.026669236124686,
+    "rmse": 9.58199723607943,
+    "mape": 4.55,
+    "wmape": 4.55,
+    "r2": 0.06798718026572403,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\app\\services\\..\\..\\models\\RL-ventas-007.joblib",
+    "fecha": "2026-11-02T20:25:10",
+    "fecha_datos": {
+      "inicio": "2025-01-29",
+      "fin": "2025-12-31"
+    },
+    "validacion": {
+      "mae": 7.3603121522091355,
+      "rmse": 8.7403906011152,
+      "mape": 4.67,
+      "r2": 0.03768065123389375
+    },
+    "prueba": {
+      "mae": 8.026669236124686,
+      "rmse": 9.58199723607943,
+      "mape": 4.55,
+      "r2": 0.06798718026572403
+    }
+  },
+  "RL-inventario-007": {
+    "algoritmo": "RL",
+    "version": "RL-inventario-007",
+    "estado": "INACTIVO",
+    "modelo_tipo": "inventario",
+    "dataset": "ventas.csv",
+    "registros": 3370,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "stock_lag_1",
+      "stock_lag_7",
+      "stock_lag_14",
+      "stock_lag_28",
+      "stock_media_7",
+      "stock_media_14",
+      "stock_minimo",
+      "stock_seguridad",
+      "tiempo_reposicion",
+      "rotacion_alta",
+      "rotacion_media",
+      "rotacion_baja",
+      "entrada_lag_1",
+      "salida_lag_1"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 11.632839226016268,
+    "rmse": 13.951513996260687,
+    "mape": 4.65,
+    "wmape": 4.65,
+    "r2": 0.21327601279781283,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\app\\services\\..\\..\\models\\RL-inventario-007.joblib",
+    "fecha": "2026-11-02T20:25:10",
+    "fecha_datos": {
+      "inicio": "2025-01-29",
+      "fin": "2025-12-31"
+    },
+    "validacion": {
+      "mae": 11.248852272239787,
+      "rmse": 13.918887570438304,
+      "mape": 2.6,
+      "r2": 0.20262213319148048
+    },
+    "prueba": {
+      "mae": 11.632839226016268,
+      "rmse": 13.951513996260687,
+      "mape": 4.65,
+      "r2": 0.21327601279781283
+    }
+  },
+  "RL-ventas-008": {
+    "algoritmo": "RL",
+    "version": "RL-ventas-008",
+    "estado": "INACTIVO",
+    "modelo_tipo": "ventas",
+    "dataset": "ventas.csv",
+    "registros": 51301,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "festivo",
+      "fin_semana",
+      "promo",
+      "descuento_pct",
+      "demanda_lag_1",
+      "demanda_lag_7",
+      "demanda_lag_14",
+      "demanda_lag_28",
+      "demanda_media_7",
+      "demanda_media_14",
+      "demanda_max_7"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.4659071138895643,
+    "rmse": 1.1233865139440269,
+    "mape": 74.16,
+    "wmape": 74.16,
+    "r2": 0.007181745070675261,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\app\\services\\..\\..\\models\\RL-ventas-008.joblib",
+    "fecha": "2026-11-02T20:52:05",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-09-08"
+    },
+    "validacion": {
+      "mae": 0.3296022917376859,
+      "rmse": 0.8072546385231738,
+      "mape": 27.57,
+      "r2": 0.005340803914483883
+    },
+    "prueba": {
+      "mae": 0.4659071138895643,
+      "rmse": 1.1233865139440269,
+      "mape": 74.16,
+      "r2": 0.007181745070675261
+    }
+  },
+  "RL-inventario-008": {
+    "algoritmo": "RL",
+    "version": "RL-inventario-008",
+    "estado": "INACTIVO",
+    "modelo_tipo": "inventario",
+    "dataset": "ventas.csv",
+    "registros": 48316,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "stock_lag_1",
+      "stock_lag_7",
+      "stock_lag_14",
+      "stock_lag_28",
+      "stock_media_7",
+      "stock_media_14",
+      "stock_minimo",
+      "stock_seguridad",
+      "tiempo_reposicion",
+      "rotacion_alta",
+      "rotacion_media",
+      "rotacion_baja",
+      "entrada_lag_1",
+      "salida_lag_1"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.5194769435738532,
+    "rmse": 2.8378807893735885,
+    "mape": 1.77,
+    "wmape": 1.77,
+    "r2": 0.978780731591209,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\app\\services\\..\\..\\models\\RL-inventario-008.joblib",
+    "fecha": "2026-11-02T20:52:08",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-09-08"
+    },
+    "validacion": {
+      "mae": 0.34916464631835664,
+      "rmse": 2.1380386708226533,
+      "mape": 0.15,
+      "r2": 0.9933971410534148
+    },
+    "prueba": {
+      "mae": 0.5194769435738532,
+      "rmse": 2.8378807893735885,
+      "mape": 1.77,
+      "r2": 0.978780731591209
+    }
+  },
+  "RL-ventas-009": {
+    "algoritmo": "RL",
+    "version": "RL-ventas-009",
+    "estado": "INACTIVO",
+    "modelo_tipo": "ventas",
+    "dataset": "ventas.csv",
+    "registros": 52534,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "festivo",
+      "fin_semana",
+      "promo",
+      "descuento_pct",
+      "demanda_lag_1",
+      "demanda_lag_7",
+      "demanda_lag_14",
+      "demanda_lag_28",
+      "demanda_media_7",
+      "demanda_media_14",
+      "demanda_max_7"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.46403352605111087,
+    "rmse": 1.101957737332493,
+    "mape": 79.45,
+    "wmape": 79.45,
+    "r2": 0.005375175867705195,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\app\\services\\..\\..\\models\\RL-ventas-009.joblib",
+    "fecha": "2026-11-02T21:20:00",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-09-10"
+    },
+    "validacion": {
+      "mae": 0.33110779946019486,
+      "rmse": 0.8069286913002063,
+      "mape": 23.79,
+      "r2": 0.003435412456624376
+    },
+    "prueba": {
+      "mae": 0.46403352605111087,
+      "rmse": 1.101957737332493,
+      "mape": 79.45,
+      "r2": 0.005375175867705195
+    }
+  },
+  "RL-inventario-009": {
+    "algoritmo": "RL",
+    "version": "RL-inventario-009",
+    "estado": "INACTIVO",
+    "modelo_tipo": "inventario",
+    "dataset": "ventas.csv",
+    "registros": 49552,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "stock_lag_1",
+      "stock_lag_7",
+      "stock_lag_14",
+      "stock_lag_28",
+      "stock_media_7",
+      "stock_media_14",
+      "stock_minimo",
+      "stock_seguridad",
+      "tiempo_reposicion",
+      "rotacion_alta",
+      "rotacion_media",
+      "rotacion_baja",
+      "entrada_lag_1",
+      "salida_lag_1"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.5084679826337584,
+    "rmse": 2.7136554017258923,
+    "mape": 1.19,
+    "wmape": 1.19,
+    "r2": 0.979012409763673,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\app\\services\\..\\..\\models\\RL-inventario-009.joblib",
+    "fecha": "2026-11-02T21:20:01",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-09-10"
+    },
+    "validacion": {
+      "mae": 0.3501187009027038,
+      "rmse": 2.0332173642697096,
+      "mape": 0.33,
+      "r2": 0.9939666249966355
+    },
+    "prueba": {
+      "mae": 0.5084679826337584,
+      "rmse": 2.7136554017258923,
+      "mape": 1.19,
+      "r2": 0.979012409763673
+    }
+  },
+  "RL-ventas-010": {
+    "algoritmo": "RL",
+    "version": "RL-ventas-010",
+    "estado": "INACTIVO",
+    "modelo_tipo": "ventas",
+    "dataset": "ventas.csv",
+    "registros": 55086,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "festivo",
+      "fin_semana",
+      "promo",
+      "descuento_pct",
+      "demanda_lag_1",
+      "demanda_lag_7",
+      "demanda_lag_14",
+      "demanda_lag_28",
+      "demanda_media_7",
+      "demanda_media_14",
+      "demanda_max_7"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.28603559254283367,
+    "rmse": 0.4845543880350745,
+    "mape": 3.07,
+    "wmape": 3.07,
+    "r2": -0.21422109837463044,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\app\\services\\..\\..\\models\\RL-ventas-010.joblib",
+    "fecha": "2026-11-02T22:22:52",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-11-30"
+    },
+    "validacion": {
+      "mae": 0.3951938563853618,
+      "rmse": 0.9918992841745465,
+      "mape": 17.61,
+      "r2": 0.008229699646109867
+    },
+    "prueba": {
+      "mae": 0.28603559254283367,
+      "rmse": 0.4845543880350745,
+      "mape": 3.07,
+      "r2": -0.21422109837463044
+    }
+  },
+  "RL-inventario-010": {
+    "algoritmo": "RL",
+    "version": "RL-inventario-010",
+    "estado": "INACTIVO",
+    "modelo_tipo": "inventario",
+    "dataset": "ventas.csv",
+    "registros": 52104,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "stock_lag_1",
+      "stock_lag_7",
+      "stock_lag_14",
+      "stock_lag_28",
+      "stock_media_7",
+      "stock_media_14",
+      "stock_minimo",
+      "stock_seguridad",
+      "tiempo_reposicion",
+      "rotacion_alta",
+      "rotacion_media",
+      "rotacion_baja",
+      "entrada_lag_1",
+      "salida_lag_1"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.1810613994854853,
+    "rmse": 0.591718974372484,
+    "mape": 0.41,
+    "wmape": 0.41,
+    "r2": 0.9978917412130208,
+    "ruta": "C:\\xampp\\htdocs\\VENTAS\\ml_service\\app\\services\\..\\..\\models\\RL-inventario-010.joblib",
+    "fecha": "2026-11-02T22:22:54",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-11-30"
+    },
+    "validacion": {
+      "mae": 0.3656272512828124,
+      "rmse": 1.6003806125554556,
+      "mape": 0.8,
+      "r2": 0.994749689107529
+    },
+    "prueba": {
+      "mae": 0.1810613994854853,
+      "rmse": 0.591718974372484,
+      "mape": 0.41,
+      "r2": 0.9978917412130208
+    }
+  },
+  "RL-ventas-011": {
+    "algoritmo": "RL",
+    "version": "RL-ventas-011",
+    "estado": "ACTIVO",
+    "modelo_tipo": "ventas",
+    "dataset": "ventas.csv",
+    "registros": 55086,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "festivo",
+      "fin_semana",
+      "promo",
+      "descuento_pct",
+      "demanda_lag_1",
+      "demanda_lag_7",
+      "demanda_lag_14",
+      "demanda_lag_28",
+      "demanda_media_7",
+      "demanda_media_14",
+      "demanda_max_7"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.12358037171719764,
+    "rmse": 0.19630818031839556,
+    "mape": 8.92,
+    "wmape": 8.92,
+    "r2": -0.2092954934047888,
+    "ruta": "c:\\Users\\YORLIN\\Downloads\\VENTAS\\ml_service\\app\\services\\..\\..\\models\\RL-ventas-011.joblib",
+    "fecha": "2026-11-14T17:17:30",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-11-30"
+    },
+    "validacion": {
+      "mae": 0.2074584968278607,
+      "rmse": 0.42756332774625594,
+      "mape": 13.08,
+      "r2": 0.018836696778859463
+    },
+    "prueba": {
+      "mae": 0.12358037171719764,
+      "rmse": 0.19630818031839556,
+      "mape": 8.92,
+      "r2": -0.2092954934047888
+    }
+  },
+  "RL-inventario-011": {
+    "algoritmo": "RL",
+    "version": "RL-inventario-011",
+    "estado": "ACTIVO",
+    "modelo_tipo": "inventario",
+    "dataset": "ventas.csv",
+    "registros": 55086,
+    "variables": [
+      "dia_semana",
+      "mes",
+      "indice_fecha",
+      "stock_lag_1",
+      "stock_lag_7",
+      "stock_lag_14",
+      "stock_lag_28",
+      "stock_media_7",
+      "stock_media_14",
+      "stock_minimo",
+      "stock_seguridad",
+      "tiempo_reposicion",
+      "rotacion_alta",
+      "rotacion_media",
+      "rotacion_baja",
+      "entrada_lag_1",
+      "salida_lag_1"
+    ],
+    "parametros": "{'copy_X': True, 'fit_intercept': True, 'n_jobs': None, 'positive': False}",
+    "mae": 0.10101647422063088,
+    "rmse": 0.32611774733880017,
+    "mape": 0.44,
+    "wmape": 0.44,
+    "r2": 0.9822811079053261,
+    "ruta": "c:\\Users\\YORLIN\\Downloads\\VENTAS\\ml_service\\app\\services\\..\\..\\models\\RL-inventario-011.joblib",
+    "fecha": "2026-11-14T17:17:31",
+    "fecha_datos": {
+      "inicio": "2025-04-29",
+      "fin": "2026-11-30"
+    },
+    "validacion": {
+      "mae": 0.24955427591781967,
+      "rmse": 0.7607445335514834,
+      "mape": 0.48,
+      "r2": 0.9158695175408855
+    },
+    "prueba": {
+      "mae": 0.10101647422063088,
+      "rmse": 0.32611774733880017,
+      "mape": 0.44,
+      "r2": 0.9822811079053261
+    }
+  }
+}
